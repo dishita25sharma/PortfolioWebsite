@@ -6,7 +6,6 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
 
 const Services = () => {
   // context
@@ -27,11 +26,15 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+          I am a budding Web Developer, who can provide
           <br />
-          ispum is simpley dummy text of printing
+          you with awesome design and relevant code.
         </spane>
-        <a href={Resume} download>
+        <a
+          href="https://drive.google.com/file/d/1rYpN_l97JbppLaw11Bw2gyF3_1Ja4Qwa/view?usp=sharing"
+          target="_blank"
+          download
+        >
           <button className="button s-button">Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
@@ -46,8 +49,10 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Soft Skill"}
+            detail={
+              "Creative Writing, Team Player, Fast learner, Flexibility, Pay attention to details"
+            }
           />
         </motion.div>
         {/* second card */}
@@ -59,7 +64,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            detail={"C++, Html, Css, JavaScript, React, MySql"}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,9 +75,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Education"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "JIIT, B.TECH - 8.2 (CGPA) Silver Line School - 88% ,   Holy Child School - 89.8%"
             }
             color="rgba(252, 166, 31, 0.45)"
           />
